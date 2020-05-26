@@ -1,0 +1,21 @@
+#top{
+	background-color: grey;
+	color:#34eb4c;
+	text-align: center;
+	width:720px;
+	height: 250px;
+	font-family: times new roman, sans-serif;
+    font-size:50px;
+   	border:10px solid green ;
+	padding: 30px;
+	font-size: bold;
+}
+#middle{
+	font-size:26px;
+	width:360px;
+	background-color: #dfe8e7;
+}
+.name{
+		font-size:36px;
+		color:pink;
+	}
