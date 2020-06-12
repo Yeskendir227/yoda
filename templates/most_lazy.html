@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block heading %}
+	Самые разыскиваемые ленивцы
+{% endblock %}
+
+{% block body %}
+ 	<ol>
+		<a href="{{url_for('index')}}"><li>Марафон</li></a>
+		<a href="{{url_for('more')}}"><li>Падлузка</li></a>
+	</ol>
+		
+	<form action="{{url_for('go_away')}}" method="post">
+		<input type="text" name="name" placeholder="enter your name">
+		<button>Submit</button>
+	</form>
+{% endblock %}
