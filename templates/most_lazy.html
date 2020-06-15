@@ -13,4 +13,15 @@
 		<input type="text" name="name" placeholder="enter your name">
 		<button>Submit</button>
 	</form>
+
+	<ul>
+		{% for note in notes %}
+			<li>{{ note }}</li>
+		{% endfor %}
+	</ul>
+
+	<form action="{{url_for('home')}}" method="post">
+		<input type="text" name="note">
+		<button>Submit</button>
+	</form>
 {% endblock %}
